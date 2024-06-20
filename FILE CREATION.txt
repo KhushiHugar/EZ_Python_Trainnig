@@ -1,0 +1,30 @@
+import os
+with open("file.txt",'w') as f:
+    f.write("hi guys welcome to my channel!! its wednesday today! have a good day!!!")
+    f.close()
+#creating a file
+with open("file.txt",'r') as f:
+    s=f.read()
+    print(s)
+    f.close()
+s=s.replace("guys","buffalos")
+with open("file.txt",'w') as f:
+    f.write(s)
+    f.close()
+with open("file.txt",'r') as f:
+    s=f.read()
+    print(s)
+    f.close()
+with open("file.txt",'rb')as f:
+    print(f.tell())
+    f.seek(-35,2)
+    print(f.read().decode('utf-8'))
+    f.close()
+os.remove('file.txt')
+
+
+output:
+hi guys welcome to my channel!! its wednesday today! have a good day!!!
+hi buffalos welcome to my channel!! its wednesday today! have a good day!!!
+0
+wednesday today! have a good day!!!

@@ -1,0 +1,85 @@
+CONSTANT TIME:
+O(1)>log(n)>n>=nlog(n)>n^2>n^3>2^n>n!
+
+BITWISE OP:
+1. OR(|)
+2. AND(&)
+3. NOT(~)
+4. EXCLUSIVE OR(^)
+5. LEFT SHIFT(<<)
+6. RIGHT SHIFT(>>)
+  
+
+FUNCTIONS
+----------
+
+1.DECLARE FUNTION USING 'DEF' KEYWORD 
+
+example:
+def sumofnumbers(a,b):
+   
+    return a+b 
+ans= sumofnumbers(12,13)
+print(ans) 
+
+output: 25
+
+TYPES OF ARGUMENTS
+1.POSITIONAL(VARIABLES TAKE EXACT VALUE WRITTEN)
+ EXAMPLE:
+    def sumofnumbers(a,b):
+       print(a)
+       print(b)
+       return a+b
+       ans= sumofnumbers(12,13)
+       print(ans)
+   
+    output: a=12, b=13 25
+
+
+2.DEFAULT
+example: def myself(name,age):
+    print(name)
+    print(age)
+    return None
+myself("shree",age=24)
+
+output: 
+shree
+24
+
+
+3.KEYWORD
+4.VARIABLE LENGTH
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+NAMING
+-------
+CAMEL CASTING
+
+
+HOMEWORK
+1. WHAT IS MEAN BY 32BIT AND 64BIT?
+ans: 
+2. WHAT IS MEAN BY PROCESSOR?
+3. WHAT IS DIFFERENCE BETWEEN QUADRA AND OCTA PROCESSOR
+4. IMPLEMENT THE RIGHT AND LEFT SHIFT OPERATORS (USING NEGATIVE NUMBERS).
+5. TYPES OF ERRORS AND ARGUMENTS
+
+
+
+1.
+

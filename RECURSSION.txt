@@ -1,0 +1,12 @@
+RECURSSION:
+------------
+1.CALLING ITSELF
+2.THE FUNCTION GETS EXECUTED FIRST BEFORE MAIN COZ OF STACK.
+3.REUSABILITY OF CODE AND LENGTH OF CODE SHRINKS(HENCE RECURSSION IS BETTER TO USE RATHER THAN LOOPS AT CASES.)
+
+n=10                      |   def print_num(n)
+for i in range(n)         |   	if n<10:
+	print(i)          |        print(n)
+                          |        print_num(n+1)
+			  |     return
+			  |   print_num(0)

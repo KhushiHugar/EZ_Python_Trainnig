@@ -1,0 +1,482 @@
+index:
+introduction
+application
+datatypes
+loops
+if else
+how to break loops
+function
+recurssion
+basic question on problem solving
+
+
+MY PYHTON (high level programming lang oo lang)
+
+why do we need py?
+1. object oriented programmin language
+2. no need to declare variable type in python(default string)
+3. easy
+4. but its bit slow compared to other languages.(interpreter)
+
+compiler - gives executable file
+interpreter - checks line by line
+
+
+TIME AND SPACE COMPLEXITY
+
+space complexity: the amount space utilized by cpu to compile and run program
+time complexity: Amount of time taken by CPU  to execute.
+
+searching: linear search O(n) 
+and binary search O(log(n)) applicable only on sorted array
+for dived a list we take TC as log(n) for conquer we use TC as n(log(n)
+sorting : merge : O(n*log(n))
+ quick : O(n*log(n)) (Dived and conquer )
+ bubble  
+which is the best sorting alg quick or merge?(homework)
+
+DATA TYPES
+int
+float
+tuple
+list
+bool
+set
+dic
+str
+
+ex.
+a=10.9
+b="AI"
+c=10
+
+print(type(a))
+print(type(b))
+print(type(c))
+output: 
+<class 'float'>
+<class 'str'>
+<class 'int'>
+
+
+
+LOOPS
+1. for
+2. while
+(break,continue,pause)
+==================================================
+1. loops entry and exit check
+ans. for and while - entry check
+     since exit check doesnt exist in python so we dont have do while loop
+==================================================
+1. for: for i in range(m,n)
+   first number is included and last nuber is excluded
+
+ex. 
+sum=0
+for i in range(1,11):
+    sum=sum+i
+print(i,sum)
+
+output:
+10 55
+
+2. While
+
+CONDITION STATEMENTS
+
+example: 
+1.
+n= int(input("enter a number"))
+if(n%2==0):
+    print("even")
+elif(n%2!=0):
+    print("odd")
+output: enter a number 2
+	even
+	enter a number 3
+	odd
+
+2.
+for i in range(1,11):
+    
+    if(i%2==0):
+        print(i,"-even")
+    elif(i%2!=0):
+        print(i,"-odd")
+output:
+1  - odd
+2  - even
+3  - odd
+4  - even
+5  - odd
+6  - even
+7  - odd
+8  - even
+9  - odd
+10 - even
+
+3.
+count=0
+for i in range(1850,2024):
+    if(i%4==0):
+        count=count+1
+        print(i,"is leap year")
+        print(count)
+output:
+1852 is leap year
+1
+1856 is leap year
+2
+1860 is leap year
+3
+1864 is leap year
+4
+1868 is leap year
+5
+1872 is leap year
+6
+1876 is leap year
+7
+1880 is leap year
+8
+1884 is leap year
+9
+1888 is leap year
+10
+1892 is leap year
+11
+1896 is leap year
+12
+1900 is leap year
+13
+1904 is leap year
+14
+1908 is leap year
+15
+1912 is leap year
+16
+1916 is leap year
+17
+1920 is leap year
+18
+1924 is leap year
+19
+1928 is leap year
+20
+1932 is leap year
+21
+1936 is leap year
+22
+1940 is leap year
+23
+1944 is leap year
+24
+1948 is leap year
+25
+1952 is leap year
+26
+1956 is leap year
+27
+1960 is leap year
+28
+1964 is leap year
+29
+1968 is leap year
+30
+1972 is leap year
+31
+1976 is leap year
+32
+1980 is leap year
+33
+1984 is leap year
+34
+1988 is leap year
+35
+1992 is leap year
+36
+1996 is leap year
+37
+2000 is leap year
+38
+2004 is leap year
+39
+2008 is leap year
+40
+2012 is leap year
+41
+2016 is leap year
+42
+2020 is leap year
+43
+
+4.prime number
+
+
+
+HOMEWORK
+
+1. TIME COMPLEXITY OF SORTING(READ)
+2. MERGE SORT VS QUICK SORT
+3. ORDER OF TIME COMPLEXITY
+4. REVISION OF TODAY'S CLASS
+*5. ARMSTRONG NUMBER, HAPPY NUMBER, STRONG NUMBER, MAGIC NUMBER
+
+
+DAY2: FUNCTION AND RECURSSION, TUPLE, LIST, DICTIONARY,SET. OOPS CONCEPT. (PROBLEM SOLVING OF ALL THESE TOPICS)
+
+
+
+
+
+1. 
+Time complexity is a way to describe the efficiency of an algorithm in terms of the amount of time it takes to run as a function of the input size 
+𝑛
+n. It helps to predict how the runtime of an algorithm increases with the size of the input.
+
+Common Time Complexities
+Here are some common time complexities you might encounter:
+Constant time (𝑂(1)O(1)): The runtime is constant and does not change with the size of the input. Example: accessing a specific element in an array.
+Logarithmic time (𝑂(log⁡𝑛)
+O(logn)): The runtime increases logarithmically as the input size increases. Example: binary search.
+Linear time (𝑂(𝑛)
+O(n)): The runtime increases linearly with the input size. Example: iterating through an array.
+Linearithmic time (𝑂(𝑛log⁡𝑛)
+O(nlogn)): The runtime increases in proportion to 𝑛log⁡𝑛
+nlogn. Example: efficient sorting algorithms like mergesort and Timsort.
+Quadratic time (𝑂(𝑛2)O(n 2)): The runtime increases quadratically with the input size. Example: simple sorting algorithms like bubble sort.
+Cubic time (𝑂(𝑛3)O(n 3)): The runtime increases cubically with the input size. Example: certain matrix multiplication algorithms.
+Exponential time (𝑂(2𝑛)O(2n )): The runtime doubles with each additional input element. Example: solving the traveling salesman problem using brute force.
+Sorting Algorithms in Python
+In Python, the primary sorting mechanism is Timsort, a hybrid algorithm derived from merge sort and insertion sort. Here’s a brief overview of the time complexity for different sorting algorithms, including Timsort:
+
+Timsort (used by sorted() and list.sort()):
+
+Best-case: 𝑂(𝑛)O(n)
+Average-case:𝑂(𝑛log⁡𝑛)O(nlogn)
+Worst-case: 𝑂(𝑛log⁡𝑛)O(nlogn)
+
+Quicksort:
+
+Best-case: 𝑂(𝑛log⁡𝑛)O(nlogn)
+Average-case: 𝑂(𝑛log⁡𝑛)O(nlogn)
+Worst-case: 𝑂(𝑛2)O(n2 )
+
+Mergesort	:
+
+Best-case:𝑂(𝑛log⁡𝑛)O(nlogn)
+Average-case: 𝑂(𝑛log⁡𝑛)O(nlogn)
+Worst-case: 𝑂(𝑛log⁡𝑛)O(nlogn)
+
+
+Heapsort:
+
+Best-case: 𝑂(𝑛log⁡𝑛)O(nlogn)
+Average-case: 𝑂(𝑛log⁡𝑛)O(nlogn)
+Worst-case: 𝑂(𝑛log⁡𝑛)O(nlogn)
+
+Bubble Sort:
+
+Best-case:𝑂(𝑛)O(n) (when the array is already sorted)
+Average-case: 𝑂(𝑛2)O(n2 )
+Worst-case:𝑂(𝑛2)O(n2 )
+
+Insertion Sort:
+
+Best-case: 𝑂(𝑛)O(n) (when the array is already sorted)
+Average-case: 𝑂(𝑛2)O(n2 )
+Worst-case: 𝑂(𝑛2)O(n2 )
+
+Selection Sort:
+
+Best-case: 𝑂(𝑛2)O(n2 )
+Average-case: 𝑂(𝑛2)O(n2 )
+Worst-case: 𝑂(𝑛2)O(n2)
+
+example:
+my_list = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
+sorted_list = sorted(my_list)
+print(sorted_list)
+
+my_list = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
+my_list.sort()
+print(my_list)
+
+2.
+Quick sort is an internal algorithm which is based on divide and conquer strategy. In this:
+
+The array of elements is divided into parts repeatedly until it is not possible to divide it further.
+It is also known as “partition exchange sort”.
+It uses a key element (pivot) for partitioning the elements.
+One left partition contains all those elements that are smaller than the pivot and one right partition contains all those elements which are greater than the key element.
+
+
+Merge sort is an external algorithm and based on divide and conquer strategy. In this:
+
+The elements are split into two sub-arrays (n/2) again and again until only one element is left.
+Merge sort uses additional storage for sorting the auxiliary array.
+Merge sort uses three arrays where two are used for storing each half, and the third external one is used to store the final sorted list by merging other two and each array is then sorted recursively.
+At last, the all sub arrays are merged to make it ‘n’ element size of the array.
+
+
+3.Understanding the order of time complexity is essential for analyzing and comparing the efficiency of different algorithms. Here is a list of common time complexities arranged from the fastest (least time-consuming) to the slowest (most time-consuming) as the input size 
+𝑛
+n grows:
+
+Constant Time - 𝑂(1)O(1)
+Logarithmic Time - 𝑂(log⁡𝑛)O(logn)
+Linear Time - 𝑂(𝑛)O(n)
+Linearithmic Time -𝑂(𝑛log⁡𝑛)O(nlogn)
+Quadratic Time - 𝑂(𝑛2)O(n2 )
+Cubic Time - 𝑂(𝑛3)O(n3 )
+Exponential Time - 𝑂(2𝑛)O(2n )
+Factorial Time - 𝑂(𝑛!)O(n!)
+
+Explanation and Examples
+1.Constant Time - 𝑂(1)O(1)
+
+The time required is constant and does not change with the size of the input.
+Example: Accessing a specific element in an array.
+
+def get_first_element(arr):
+    return arr[0]
+
+
+2.Logarithmic Time -𝑂(log⁡𝑛)O(logn)
+
+The time required increases logarithmically as the input size increases.
+Example: Binary search in a sorted array.
+
+def binary_search(arr, target):
+    left, right = 0, len(arr) - 1
+    while left <= right:
+        mid = (left + right) // 2
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            left = mid + 1
+        else:
+            right = mid - 1
+    return -1
+
+
+3.Linear Time - 𝑂(𝑛)O(n)
+
+The time required increases linearly with the size of the input.
+Example: Finding the maximum element in an array.
+
+def find_max(arr):
+    max_value = arr[0]
+    for num in arr:
+        if num > max_value:
+            max_value = num
+    return max_value
+
+
+4.Linearithmic Time - 𝑂(𝑛log⁡𝑛)O(nlogn)
+
+The time required increases in proportion to 𝑛log⁡𝑛nlogn.
+Example: Efficient sorting algorithms like merge sort and quicksort.
+
+def merge_sort(arr):
+    if len(arr) > 1:
+        mid = len(arr) // 2
+        left_half = arr[:mid]
+        right_half = arr[mid:]
+
+        merge_sort(left_half)
+        merge_sort(right_half)
+
+        i = j = k = 0
+        while i < len(left_half) and j < len(right_half):
+            if left_half[i] < right_half[j]:
+                arr[k] = left_half[i]
+                i += 1
+            else:
+                arr[k] = right_half[j]
+                j += 1
+            k += 1
+        while i < len(left_half):
+            arr[k] = left_half[i]
+            i += 1
+            k += 1
+        while j < len(right_half):
+            arr[k] = right_half[j]
+            j += 1
+            k += 1
+
+
+5.Quadratic Time - 𝑂(𝑛2)O(n2 )
+
+The time required increases quadratically with the size of the input.
+Example: Simple sorting algorithms like bubble sort and insertion sort.
+
+def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(0, n-i-1):
+            if arr[j] > arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+
+
+6.Cubic Time - 𝑂(𝑛3)O(n3 )
+
+The time required increases cubically with the size of the input.
+Example: Certain matrix multiplication algorithms.
+
+def matrix_multiplication(A, B):
+    n = len(A)
+    C = [[0 for _ in range(n)] for _ in range(n)]
+    for i in range(n):
+        for j in range(n):
+            for k in range(n):
+                C[i][j] += A[i][k] * B[k][j]
+    return C
+
+
+7.Exponential Time - 𝑂(2𝑛)O(2n )
+
+The time required doubles with each additional element in the input.
+Example: Solving the traveling salesman problem using brute force.
+
+def fibonacci(n):
+    if n <= 1:
+        return n
+    return fibonacci(n-1) + fibonacci(n-2)
+
+
+8.Factorial Time - 𝑂(𝑛!)O(n!)
+
+The time required increases factorially with the size of the input.
+Example: Generating all permutations of a set.
+
+import itertools
+def all_permutations(elements):
+    return list(itertools.permutations(elements))
+
+5.Problem solving
+(i) armstrong number
+
+num=int(input("enter a number"))
+sum=0
+for i in num:
+	sum=sum+int(i)**len(num)
+if int(num) == sum:
+	print(num,"Armstrong number")
+else:
+	print(num,"Not Armstrong number")
+
+output:
+enter a number153
+153 Armstrong number
+
+enter a number155
+155 Not Armstrong number
+
+(ii)happy number: a number which sum of its squared digits will eventually be 1, after infinite number of iterations.
+
+(iii) strong number: A strong number (also known as a Krishnamurthy number) is a number in which the sum of the factorial of each digit is equal to the number itself. For example, 145 is a strong number because 
+1!+4!+5!=1+24+120=145
+
+(iv) magic number: "magic number" typically refers to a numeric value that appears in code without explanation or clear meaning. This can make the code difficult to understand and maintain. It's generally considered a best practice to avoid using magic numbers and instead assign them to named constants with descriptive names. For example:

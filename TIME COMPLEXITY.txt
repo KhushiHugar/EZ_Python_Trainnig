@@ -1,0 +1,92 @@
+consider the below code:
+
+eg. print("helllo world")
+n=1
+
+
+(it runs in single process)
+
+time complexity: 
+--------------------
+1. everything is denoted as 1
+
+eg.(linear)
+ for i in range(0,10):
+	print("hello world")
+n=10
+
+eg. (logarithmic)
+while(i<100):
+	print("hello world")
+	i=i*2
+n=log2(100)
+n=7
+(how? 1,2,4,8,16,32,64<100>128)
+
+eg.(quadratic)
+for i in range(0,10)
+	for j in range(0,10)
+	print("hello world")
+
+2. any constant will be removed
+2n=n
+3.1+1 -> x
+ 1+1=1
+
+----------------------------------------------------------
+
+constant<logarithmic<linear<exponential
+i.e.,
+<logn<n<nlogn<m*n<n^2
+
+----------------------------------------------------------
+NOTATIONS:
+-----------
+
+O-> WORST CASE=(n)
+OMEGA(W)-> BEST CASE=(1)
+THETA(0)->AVERAGE CASE=(n/2)
+
+Q1)calculate the time taken for 1000 process
+
+alg 1 ->O(n)
+alg 2 ->O(log2n)
+
+Sys 1 -> 0.02sec
+Sys 2 -> 2sec
+
+
+ans: n=0.02*1000=20sec
+     
+     n=log2(1000)=9.966sec(since its given as 2sec in Sys2, we do,)
+     		 =9.966 * 2 = 19.932
+
+
+
+
+Q2) calculate the best and worst case for the given code:
+     for r in range(len(s)):                  ---------> n
+	if s[r] in char_set:
+	    while l<r and s[r] in char_set:   ---------> m
+		char_set.remove(s.[l])
+		l+=1
+
+ans: best case = n*m
+     worst case = n^m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

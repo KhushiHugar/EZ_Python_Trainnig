@@ -1,0 +1,53 @@
+OOPS
+
+1.OBJECT:REAL WORLD ENTITY
+2.CLASS: BLUEPRINT OF AN OBJECT
+3.WE CAN CREATE N NUMBER OF OBJECTS
+
+CONSTRUCTOR AND DESTRUCTOR
+def __init__(self,a,b)
+self holds the address of the class
+
+DEFAULT CONSTRUCTOR = __init__
+
+OVERLOADING AND OVERRIDING
+
+access modifier: allows to access variables
+----------------(i) protected
+		(ii)public
+		(iii)private
+
+
+(i)global variables
+(ii)local variables
+
+4 PILLARS OF OOPS
+------------------
+
+1.ABSTRACTION
+2.ENCAPSULATION
+3.INHERITANCE
+4.POLYMORPHISM
+  4.1 STATIC(METHOD OVERRIDING)
+  4.2 DYNAMIC(METHOD OVERLOADING- its variable length argument(we pass it through terminal))
+
+METHOD OVERLOADING IS NOT POSSIBLE IN PYTHON. but there are ways to attain that particular thing.
+
+i)INSTANCE VARIABLE   
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

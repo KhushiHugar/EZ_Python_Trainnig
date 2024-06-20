@@ -1,0 +1,85 @@
+LIST
+1. ITS MUTABLE
+2. ITS ORDERED FORM
+3. accepts duplicate value
+4. square brackets to insert elements
+5. list can store anything 
+EXAMPLE: 
+my_list=[1,2,3,4]
+print(my_list)
+
+METHODS IN LIST
+----------------
+1. append(you can insert only one element at the end only at once again and again)
+ ex: my_list.append(5)
+
+2.extend(you can extend req no. of elements at a time can add nly at end)
+ eg: my_list.extend([6,7,8])
+
+3.insert(it can insert any element anywhere by using index values)
+ eg: my_list.insert(7,11)
+
+4.remove
+ (call by value:by mentioning the value we can remove the ele but     in backend original value of list will be stored in permanant  memory.
+  
+  call by reference: they use pointers)
+
+ eg: my_list.remove(5)
+
+5.pop()
+ eg: my_list.pop()
+
+6.clear
+ eg: my_list.clear()
+
+7.count
+ eg: my_list.count() 
+
+8.copy
+ eg: my_list.copy() 
+
+the code for the above methods:
+
+user_input=input('enter the list:') 
+my_list= list(map(int,user_input.split(' ')))
+print(my_list)
+my_list.append(5)
+print(my_list)
+my_list.extend([6,7,8])
+print(my_list)
+my_list.insert(7,11)
+print(my_list)
+my_list.remove(5)
+print(my_list)
+my_list.pop(5)
+print(my_list)
+my_list.count(2)
+print(my_list.count(2)) 
+my_list.copy()
+print(my_list) 
+my_list.clear()
+print(my_list) 
+
+output:
+enter the list: 1,2,2,2,3,2
+[1, 2, 2, 2, 3, 2]
+[1, 2, 2, 2, 3, 2, 5]
+[1, 2, 2, 2, 3, 2, 5, 6, 7, 8]
+[1, 2, 2, 2, 3, 2, 5, 11, 6, 7, 8]
+[1, 2, 2, 2, 3, 2, 11, 6, 7, 8]
+[1, 2, 2, 2, 3, 11, 6, 7, 8]
+3
+[1, 2, 2, 2, 3, 11, 6, 7, 8]
+[]
+
+
+
+
+note:
+(1)my_list=[1,2,3,4]
+   print(my_list)
+   output:[1, 2, 3, 4]
+
+(ii)my_list=[1,2,3,4]
+    print(*my_list)
+    output:1, 2, 3, 4

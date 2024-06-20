@@ -1,0 +1,16 @@
+TUPLE
+------
+
+1. tuples are immutable
+2. ordered
+
+DEFINE SAMPLE TUPLE:
+my_tuple = (1,2,3,4,5)
+
+
+1. index(value):(returns the index of the first occurance of a value)
+ 
+index = my_tuple.index)
+print("index of 3:",index)
+
+2.count(value): returns the number of occurances of a value
